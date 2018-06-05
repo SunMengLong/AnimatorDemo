@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="-1"
+        android:repeatMode="restart"
+        android:fromDegrees="0"
+        android:toDegrees="359"></rotate>
+</rotate>
+
+<!--
+含义：
+duration：动画时间,1000毫秒
+pivotX：旋转中心点的X轴坐标，50%。浮点数或是百分比，浮点数和百分比都是表示距离Object的左边缘，如5、5%。还有一种百分比是相对于父容器的左边缘，如5%p。一般50%表示正中心。
+pivotY：旋转中心点的Y轴坐标，50%。同上。
+repeatCount：重复次数，无数循环，可以设置为infinite，表示无限的。
+repeatMode：重复运行的模式，默认为restart，每次重复从头开始。可以设置为reverse，表示结束开始之后向前重复运行。
+fromDegrees：开始角度位置0
+toDegrees：结束角度位置359，正数表示顺时针，负数表示逆时针
+detachWallpaper 表示是否在壁纸上运行
+zAdjustment 表示被animated的内容在运行时在z轴上的位置，默认为normal。normal保持内容当前的z轴顺序、top运行时在最顶层显示、bottom运行时在最底层显示
+-->
