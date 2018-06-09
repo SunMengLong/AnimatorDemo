@@ -7,10 +7,12 @@ import android.widget.Button;
 
 import com.menglong.animatordemo.base.BaseActivity;
 import com.menglong.animatordemo.rotate.RotateActivity;
+import com.menglong.animatordemo.translate.TranslateActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Button rotate_but;
+    private Button translate_but;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +24,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private void setView() {
         rotate_but.setOnClickListener(this);
+        translate_but.setOnClickListener(this);
     }
 
     private void initView() {
         rotate_but = (Button) findViewById(R.id.rotate_but);
+        translate_but = (Button) findViewById(R.id.translate_but);
     }
 
     @Override
@@ -33,6 +37,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (view.getId()){
             case R.id.rotate_but:
                 intent(RotateActivity.class);
+                break;
+            case R.id.translate_but:
+                intent(TranslateActivity.class);
                 break;
             default:
                 break;

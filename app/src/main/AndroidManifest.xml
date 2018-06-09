@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".rotate.RotateActivity" />
-        <activity android:name=".base.BaseActivity"></activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".translate.TranslateActivity"></activity>
     </application>
 
 </manifest>

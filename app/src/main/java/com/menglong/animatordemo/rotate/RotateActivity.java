@@ -28,13 +28,10 @@ public class RotateActivity extends BaseActivity implements View.OnClickListener
     }
 
     private void init() {
+        super.initTitle("旋转动画");
         rotate_img = (ImageView) findViewById(R.id.rotate_img);
         rotate_but = (Button) findViewById(R.id.rotate_but);
-        title_back = (ImageView) findViewById(R.id.title_back);
-        title_text = (TextView) findViewById(R.id.title_text);
-        title_text.setText("旋转");
         rotate_but.setOnClickListener(this);
-        title_back.setOnClickListener(this);
     }
 
     @Override
